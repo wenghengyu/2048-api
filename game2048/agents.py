@@ -10,8 +10,10 @@ class Agent:
 
     def play(self, max_iter=np.inf, verbose=False):
         n_iter = 0
+        one_play_time = []
         while (n_iter < max_iter) and (not self.game.end):
-            direction = self.step()
+            direction, one_step_time = self.step()
+            one_play_time.append(one_step_time)
             self.game.move(direction)
             n_iter += 1
             if verbose:
@@ -20,6 +22,8 @@ class Agent:
                     ["left", "down", "right", "up"][direction]))
                 if self.display is not None:
                     self.display.display(self.game)
+        time = sum(one_play_time)/len(one_play_time)
+        return time
 
     def step(self):
         direction = int(input("0: left, 1: down, 2: right, 3: up = ")) % 4
