@@ -2,14 +2,14 @@
 A 2048 game api for training supervised learning (imitation learning) or reinforcement learning agents
 
 # 代码结构
-[`best/`](best/)文件夹存放了模型的权重文件[`model.h5`](best/model.h5).
-[`game2048/`](game2048/)文件夹中的[`agents.py`](game2048/agents.py)文件进行了修改.
-[`Agent.py`](Agent.py)文件为自己的Agent程序,继承了[`agents.py`](game2048/agents.py).
-[`EE369_fingerprint.json`](EE369_fingerprint.json)为Agent指纹.
-[`Train.py`](Train.py)为训练程序.
-[`evaluate.py`](evaluate.py)为修改后的运行程序.
-[`generate_fingerprint.py`](generate_fingerprint.py)为修改后的指纹程序.
-[`model.py`](model.py)为模型程序.
+* [`best/`](best/)文件夹存放了模型的权重文件[`model.h5`](best/model.h5).
+* [`game2048/`](game2048/)文件夹中的[`agents.py`](game2048/agents.py)文件进行了修改.
+* [`Agent.py`](Agent.py)文件为自己的Agent程序,继承了[`agents.py`](game2048/agents.py).
+* [`EE369_fingerprint.json`](EE369_fingerprint.json)为Agent指纹.
+* [`Train.py`](Train.py)为训练程序.
+* [`evaluate.py`](evaluate.py)为修改后的运行程序.
+* [`generate_fingerprint.py`](generate_fingerprint.py)为修改后的指纹程序.
+* [`model.py`](model.py)为模型程序.
 
 # 运行方式
 运行model.py，在best文件夹里生成初始的权重文件model.h5
